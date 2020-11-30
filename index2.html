@@ -79,10 +79,11 @@
             var ua = navigator.userAgent.toLowerCase();
             //alert(u + '---------' + ua + '-----------' + u.indexOf("Android") + '-----------' + u.indexOf("Linux"))
             if (ua.match(/MicroMessenger/i) == "micromessenger") { // 判断是否在微信内置浏览器打开
-                //alert('当前页面在微信中打开')
+                alert('当前页面在微信中打开')
                 let child = document.getElementById("btn1");
                 child.style = 'display:none;';
             }  else if (!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/) or (u.indexOf("iPhone") > -1) { //ios终端// 判断iOS
+                alert('苹果')
                 window.location.href = "http://down.vtuv.cn/qy/yp2x"; 
             } else {
                 alert('安卓')
