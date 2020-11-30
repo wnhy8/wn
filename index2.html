@@ -14,7 +14,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <link rel="stylesheet" href="https://ali-static.jappstore.com/assets/stylesheets/b7cd4da6.download.css">
+    <link rel="stylesheet" href="https://ali-static.jappstore.com/assets/stylesheets/e3f4f7c3.download.css">
     <title>闲玩互娱</title>
 </head>
 
@@ -50,7 +50,7 @@
                             <p class="scan-tips">扫描二维码下载<br>:&nbsp;&nbsp;<span class="text-black"></span></p>
                             <div class="release-info">
                                 <p><span itemprop="softwareVersion">1.1 (Build 1.0)- 30.76 MB</span></p>
-                                <p>更新于: <span itemprop="datePublished">2020-011-10 03:29</span></p>
+                                <p>更新于: <span itemprop="datePublished">2020-11-10 03:29</span></p>
                             </div>
                             <div id="actions" class="actions type-ios">
                                 <button id="btn1" onclick="install()">下载安装</button>
@@ -68,30 +68,16 @@
             </header>
         </div>
     </div>
-    <script type="text/template" id="loading">
-        <div class='loading-container'>
-            <h1>正在加载</h1>
-        </div>
-    </script>
     <script>
         function initdata() {
-            var u = navigator.userAgent;
             var ua = navigator.userAgent.toLowerCase();
-            alert(u)
-            //alert(u + '---------' + ua + '-----------' + u.indexOf("Android") + '-----------' + u.indexOf("Linux"))
-            if (ua.match(/MicroMessenger/i) == "micromessenger") { // 判断是否在微信内置浏览器打开
-                alert('当前页面在微信中打开')
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
                 let child = document.getElementById("btn1");
                 child.style = 'display:none;';
-            }  else if (!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/) or (u.indexOf("iPhone") > -1) { //ios终端// 判断iOS
-                alert('苹果')
-                window.location.href = "http://down.vtuv.cn/qy/yp2x"; 
             } else {
-                alert('安卓')
-                window.location.href = "http://down.vtuv.cn/qy/yp2x"; 
+                window.location.href = "http://down.vtuv.cn/qy/yp2x";
             }
         }
-
         function install() {
         }
         initdata();
