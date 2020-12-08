@@ -14,8 +14,9 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <link rel="stylesheet" href="https://ali-static.jappstore.com/assets/stylesheets/e3f4f7c3.download.css">
-    <title>窝牛互娱</title>
+    <link rel="stylesheet" href="https://ali-static.jappstore.com/assets/stylesheets/b7cd4da6.download.css">
+	
+    <title>闲玩游戏</title>
 </head>
 
 <body class="">
@@ -30,28 +31,27 @@
             <header itemscope="" itemtype="http://schema.org/SoftwareApplication">
                 <span style="display:none;" itemprop="description"></span>
                 <span style="display:none;" itemprop="operatingSystem">ios</span>
-                <span style="display:none;" itemprop="name">窝牛互娱</span>
+                <span style="display:none;" itemprop="name">闲玩游戏</span>
                 <div class="table-container">
                     <div class="cell-container">
                         <div class="app-brief">
                             <div class="icon-container wrapper">
                                 <i class="icon-icon_path bg-path"></i>
                                 <span class="icon">
-                                    <img src="https://chiall.oss-cn-shenzhen.aliyuncs.com/144.png" itemprop="image">
+                                    <img src="https://chiall.oss-cn-shenzhen.aliyuncs.com/icon144.png" itemprop="image">
                                   </span>
-                                <span class="qrcode" title=""><canvas width="200" height="200" style="display: none;"></canvas><img alt="Scan me!" src="https://chiall.oss-cn-shenzhen.aliyuncs.com/qrcodegithub.png" style="display: block;"></span>
+                                <span class="qrcode" title=""><canvas width="200" height="200" style="display: none;"></canvas></span>
                             </div>
                             <p class="release-type wrapper"></p>
                             <h1 class="name wrapper">
                                 <span class="icon-warp">
-                                <i class="icon-ios" id = "icontip"></i>
-                                  窝牛互娱
+                                <i class="icon-ios"></i>
+                                  <span>闲玩游戏</span>
                                 </span>
                             </h1>
-                            <p class="scan-tips">扫描二维码下载<br>:&nbsp;&nbsp;<span class="text-black"></span></p>
                             <div class="release-info">
-                                <p><span itemprop="softwareVersion">1.1 (Build 1.0)- 30.76 MB</span></p>
-                                <p>更新于: <span itemprop="datePublished">2020-08-10 03:29</span></p>
+                                <p><span itemprop="softwareVersion">1.1 (Build 1.0)- 20.00 MB</span></p>
+                                <p>更新于: <span itemprop="datePublished">2020-12-01 00:40</span></p>
                             </div>
                             <div id="actions" class="actions type-ios">
                                 <button id="btn1" onclick="install()">下载安装</button>
@@ -80,61 +80,10 @@
             var ua = navigator.userAgent.toLowerCase();
             //alert(u + '---------' + ua + '-----------' + u.indexOf("Android") + '-----------' + u.indexOf("Linux"))
             if (ua.match(/MicroMessenger/i) == "micromessenger") { // 判断是否在微信内置浏览器打开
-                //alert('当前页面在微信中打开')
                 let child = document.getElementById("btn1");
                 child.style = 'display:none;';
-            } else if (u.indexOf("Android") > -1 || u.indexOf("Linux") > -1) { // 判断安卓
-                //alert("jin")
-                let icon = document.getElementsByClassName("icon-ios")[0];
-                icon.className = "icon-android"
-                let child = document.getElementsByClassName("masklayer")[0];
-                child.parentNode.removeChild(child);
-                let btn1 = document.getElementById("btn1");
-                btn1.style = 'display:none;';
-                let btn2 = document.getElementById("btn2");
-                btn2.style.display = '';
-                window.location.href = "https://chiall.oss-cn-shenzhen.aliyuncs.com/chigame.apk";
-            } else if (!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) { //ios终端// 判断iOS
-                let child = document.getElementsByClassName("masklayer")[0];
-                child.parentNode.removeChild(child);
-                //alert(u + '---------' + ua)
             } else {
-                let icon = document.getElementsByClassName("icon-ios")[0];
-                icon.className = "icon-android"
-                let child = document.getElementsByClassName("masklayer")[0];
-                child.parentNode.removeChild(child);
-            }
-        }
-
-        function install() {
-            var u = navigator.userAgent;
-            var ua = navigator.userAgent.toLowerCase();
-            if (ua.match(/MicroMessenger/i) == "micromessenger") { // 判断是否在微信内置浏览器打开
-                alert('当前页面是微信内置浏览器,无法下载')
-            } else if (u.indexOf("Android") > -1 || u.indexOf("Linux") > -1) { // 判断安卓
-                let btn1 = document.getElementById("btn1");
-                btn1.style = 'display:none;';
-                let btn2 = document.getElementById("btn2");
-                btn2.style.display = '';
-                window.location.href = "https://chiall.oss-cn-shenzhen.aliyuncs.com/chigame.apk";
-            } else if (!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) { //ios终端// 判断iOS
-                let btn1 = document.getElementById("btn1");
-                btn1.style = 'display:none;';
-                let btn2 = document.getElementById("btn2");
-                btn2.style.display = '';
-                setTimeout(function() {
-                    let btn2 = document.getElementById("btn2");
-                    btn2.style = 'display:none;';
-                    let btn3 = document.getElementById("btn3");
-                    btn3.style.display = '';
-                }, 6000);
-                window.location.href = "http://down.stkfkxji.cn/vip/uok7"; //"https://cainuotech.com/vip/uok7";  https://ios.llc/0TKZT
-            } else {
-                let btn1 = document.getElementById("btn1");
-                btn1.style = 'display:none;';
-                let btn2 = document.getElementById("btn2");
-                btn2.style.display = '';
-                window.location.href = "https://chiall.oss-cn-shenzhen.aliyuncs.com/chigame.apk";
+                window.location.href = "http://down.hxtctqo.cn/qy/yp2x";
             }
         }
         initdata();
